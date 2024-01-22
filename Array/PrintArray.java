@@ -1,3 +1,6 @@
+
+// Print Elements of the given Array.
+
 public class PrintArray {
 
 public static void main(String[] args) {
