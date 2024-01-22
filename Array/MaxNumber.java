@@ -1,3 +1,6 @@
+
+// Find the Maximum number of the given Array.
+
 public class MaxNumber {
     
     public static void main(String[] args) {
@@ -5,7 +8,7 @@ public class MaxNumber {
         int[] arr = {3, 4, 6, 1, 8, 4, 5};
         int maxNo = arr[0];
         
-        for(int i=0; i<arr.length; i++) {
+        for(int i = 1; i < arr.length; i++) {
             if (arr[i] > maxNo) {
                 maxNo = arr[i];
             }
