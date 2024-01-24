@@ -29,6 +29,11 @@ class myLinkedList {
         System.out.println("null");
     }
 
+    public void printReverse() {
+        callReverse(head);
+        System.out.print("null");
+    }
+
     public void callReverse(Node current) {
         if(current==null){
             return;
