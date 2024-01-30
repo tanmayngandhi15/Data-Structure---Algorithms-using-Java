@@ -26,7 +26,7 @@ class myLinkedList {
             System.out.print(current.value+"->");
             current = current.next;
         }
-        System.out.println("null");
+        System.out.println("null\n");
     }
 
     public void printReverse() {
@@ -57,8 +57,6 @@ public class ReverseList {
         myList.show();
 
         myList.printReverse();
-
-        myList.show();
 
     }
 }
