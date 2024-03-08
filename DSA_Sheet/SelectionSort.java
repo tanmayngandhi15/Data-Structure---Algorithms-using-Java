@@ -17,15 +17,17 @@ public class SelectionSort {
 
     public static void main(String args[]) {
       
-        int[] arr = {0, 1, 1, 0, 1, }; // 2, 1, 2, 0, 0, 0, 1};
+        int[] arr = {0​, 2, 1, 2, 0};
+
+        int N = 5;
     
         int start = 0;
     
-        for (int i=0; i < arr.length; i++) {
+        for (int i=0; i < N; i++) {
             
             start = i;
             
-            for (int j = i+1; j < arr.length; j++) {
+            for (int j = i+1; j < N; j++) {
                 
                 if (arr[start] > arr[j]) {
                     
