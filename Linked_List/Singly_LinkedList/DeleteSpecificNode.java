@@ -30,11 +30,29 @@ class myLinkedList {
     }
 
     public void deleteAt(int at) {
-        Node current = head;
-        while(current.next.value!=at) {
-            current = current.next;
+
+        if (head == null) {
+            return;
         }
-        current.next = current.next.next;
+        
+        if (head.value == at) {
+            head = head.next;
+        }
+            
+            Node current = head;
+            
+            while(current.next != null && current.next.value != at) {
+                
+                current = current.next;
+                if(current == null) {
+                    return;
+                }
+            }
+            
+           if (current.next != null) {
+           current.next = current.next.next;
+           }
+
     }
 
 }
